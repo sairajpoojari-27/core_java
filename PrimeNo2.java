@@ -16,8 +16,8 @@ class PrimeNo2
         if(fact==2)
         {
             count++;
-            System.out.println(i+" is the heigest prime number ");
-            if(count==2)
+            System.out.println(i+" is the 1st 10 heigest prime number ");
+            if(count==10)
             {
                 break;
             }
