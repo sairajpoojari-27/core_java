@@ -1,28 +1,30 @@
 import java.util.Scanner;
-class Pattern13
+class Newyear
 {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         System.out.println("enter the rows: ");
-        int rows=sc.nextInt();
-        System.out.println("enter the column: ");
-        int cols=sc.nextInt();
-        for (int i = 1; i <=rows; i++) 
+        int row=sc.nextInt();
+        System.out.println("enter the col: ");
+        int col=sc.nextInt();
+        
+        for (int i = 1; i <=row; i++) 
         {
-            for (int j = 1; j <=cols; j++) 
+            for (int j = 1; j <=col; j++) 
             {
-                if(i==rows||j==1||i==j)
-                {
-                    System.out.print("*"+" ");
+                if(j==1||j==col||i==(row+1)/2)
+				{
+                System.out.print("*"+" ");
                 }
                 else
                 {
                     System.out.print(" "+" ");
                 }
+				
             }
             System.out.println(" ");
         }
 
-
     }
+
 }
